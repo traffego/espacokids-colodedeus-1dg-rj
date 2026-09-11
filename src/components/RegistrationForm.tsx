@@ -445,24 +445,46 @@ export function RegistrationForm() {
             <h1 className="text-3xl sm:text-4xl font-black tracking-tight text-[#f4eee3] uppercase mt-0.5">
               Espaço Kids
             </h1>
-            <p className="text-xs sm:text-sm text-[#d2dfd8] mt-2 leading-relaxed">
-              Cuidando dos nossos pequenos com carinho e segurança para viverem a
-              experiência do <strong>1DG</strong> enquanto os pais participam do evento!
+            <p className="text-xs sm:text-sm text-[#f4eee3] mt-2 leading-relaxed font-medium">
+              Vamos cuidar dos nossos pequenos com muito carinho para que eles também possam viver um dia de muita alegria e a experiência do 1DG🔥
             </p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-2.5 pt-2 text-xs">
-            <div className="bg-black/20 backdrop-blur rounded-lg p-2.5 border border-white/10">
-              <span className="font-bold block text-[#e9decb] uppercase text-[10px]">Faixa Etária</span>
-              <span className="text-white font-medium">De 03 a 10 anos</span>
+          {/* Avisos em destaque */}
+          <div className="bg-black/25 backdrop-blur-sm border border-white/20 rounded-xl p-3.5 space-y-2 text-xs sm:text-sm">
+            <p className="font-bold text-[#f4eee3] flex items-center gap-1.5">
+              <span>📲</span> Após o pagamento, envie o comprovante para a Juciara.
+            </p>
+            <p className="font-bold text-amber-300 flex items-center gap-1.5">
+              <span>⚠️</span> As vagas são destinadas exclusivamente aos filhos dos membros.
+            </p>
+          </div>
+
+          {/* Cards destacados com alto contraste */}
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-1">
+            <div className="bg-[#fcf9f2] text-[#1c3028] rounded-xl p-3.5 border-2 border-[#ded5c2] shadow-sm">
+              <span className="font-black block text-[#507765] uppercase text-[10px] tracking-wider">
+                Faixa Etária
+              </span>
+              <span className="text-[#1c3028] font-black text-sm sm:text-base">
+                De 03 a 10 anos
+              </span>
             </div>
-            <div className="bg-black/20 backdrop-blur rounded-lg p-2.5 border border-white/10">
-              <span className="font-bold block text-[#e9decb] uppercase text-[10px]">Requisito</span>
-              <span className="text-white font-medium">Criança desfraldada</span>
+
+            <div className="bg-[#fcf9f2] text-[#1c3028] rounded-xl p-3.5 border-2 border-[#ded5c2] shadow-sm">
+              <span className="font-black block text-[#507765] uppercase text-[10px] tracking-wider">
+                Requisito
+              </span>
+              <span className="text-[#1c3028] font-black text-sm sm:text-base">
+                Criança desfraldada
+              </span>
             </div>
-            <div className="bg-black/20 backdrop-blur rounded-lg p-2.5 border border-white/10">
-              <span className="font-bold block text-[#e9decb] uppercase text-[10px]">Investimento</span>
-              <span className="text-white font-bold">
+
+            <div className="bg-[#fcf9f2] text-[#1c3028] rounded-xl p-3.5 border-2 border-[#ded5c2] shadow-sm">
+              <span className="font-black block text-[#507765] uppercase text-[10px] tracking-wider">
+                Investimento
+              </span>
+              <span className="text-[#264639] font-black text-sm sm:text-base flex items-center gap-1">
                 R$ 20 c/ alimentação 🍎
               </span>
             </div>
