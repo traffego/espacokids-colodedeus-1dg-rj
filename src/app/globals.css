@@ -1,26 +1,48 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #f4eee3;
+  --foreground: #1c3028;
+  --primary: #264639;
+  --primary-hover: #1b3329;
+  --cream-card: #fcf9f2;
+  --cream-border: #ded5c2;
+  --sage: #507765;
+  --stamp-ink: #1c3028;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-moss-800: #1c3028;
+  --color-moss-700: #264639;
+  --color-moss-600: #335b4b;
+  --color-moss-500: #467360;
+  --color-moss-100: #e3ece7;
+  --color-cream-100: #fcf9f2;
+  --color-cream-200: #f4eee3;
+  --color-cream-300: #e9decb;
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background-image: radial-gradient(#dcd2be 0.75px, transparent 0.75px);
+  background-size: 24px 24px;
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* Efeito carimbo postal */
+.postal-stamp-border {
+  border: 2px dashed #335b4b;
+}
+
+/* Padrão Copacabana SVG embutido */
+.copacabana-pattern {
+  background-color: #264639;
+  background-image: radial-gradient(circle at 50% 100%, #f4eee3 20%, transparent 21%),
+                    radial-gradient(circle at 50% 0%, #264639 20%, transparent 21%);
+  background-size: 60px 30px;
 }
