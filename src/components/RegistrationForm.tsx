@@ -41,7 +41,7 @@ interface ChildFormState {
 
 const PRICE_PER_CHILD = 20.0;
 const PIX_KEY = process.env.NEXT_PUBLIC_PIX_KEY || "colodeusrj@gmail.com";
-const JUCIARA_WHATSAPP = process.env.NEXT_PUBLIC_JUCIARA_PHONE || "5521971714246";
+const JUCIARA_WHATSAPP = process.env.NEXT_PUBLIC_JUCIARA_PHONE || "5521993588010";
 
 export function RegistrationForm() {
   const [parentName, setParentName] = useState("");
