@@ -419,33 +419,25 @@ export function RegistrationForm() {
     <form onSubmit={handleSubmit} className="max-w-2xl mx-auto space-y-6">
       {/* Banner Oficial / Cartaz Visual */}
       <div className="rounded-2xl bg-[#264639] text-[#f4eee3] shadow-md border border-[#1a3328] overflow-hidden relative">
-        <div className="p-6 sm:p-7 space-y-4 relative z-10">
-          <div className="flex items-center justify-between">
-            <div className="flex items-center gap-2">
-              <Image
-                src="/logo-colodedeus.png"
-                alt="Colo de Deus"
-                width={150}
-                height={28}
-                className="h-6 sm:h-7 w-auto object-contain"
-              />
-              <span className="text-[10px] bg-white/15 text-[#f4eee3] font-bold px-2 py-0.5 rounded-sm uppercase tracking-wider">
-                MISSÃO RJ
-              </span>
-            </div>
-            <Badge variant="outline" className="border-white/30 text-[#f4eee3] text-[10px] uppercase font-bold">
-              Filhos de Membros
-            </Badge>
+        <div className="p-5 sm:p-7 space-y-3.5 relative z-10">
+          <div className="flex items-center">
+            <Image
+              src="/logo-colodedeus.png"
+              alt="Colo de Deus"
+              width={140}
+              height={26}
+              className="h-5 sm:h-6 w-auto object-contain opacity-90"
+            />
           </div>
 
-          <div>
-            <span className="text-[11px] font-bold tracking-widest uppercase text-[#e9decb] block">
+          <div className="space-y-1">
+            <span className="text-[10px] sm:text-[11px] font-bold tracking-widest uppercase text-[#e9decb] block">
               * UM DIA DE GLÓRIA *
             </span>
-            <h1 className="text-3xl sm:text-4xl font-black tracking-tight text-[#f4eee3] uppercase mt-0.5">
+            <h1 className="text-2xl sm:text-4xl font-black tracking-tight text-[#f4eee3] uppercase">
               Espaço Kids
             </h1>
-            <p className="text-xs sm:text-sm text-[#f4eee3] mt-2 leading-relaxed font-medium">
+            <p className="text-xs sm:text-sm text-[#f4eee3] leading-relaxed font-medium pt-0.5">
               Vamos cuidar dos nossos pequenos com muito carinho para que eles também possam viver um dia de muita alegria e a experiência do 1DG🔥
             </p>
           </div>
@@ -564,9 +556,9 @@ export function RegistrationForm() {
 
       {/* DADOS DOS FILHOS */}
       <div className="space-y-4">
-        <div className="flex items-center justify-between px-1">
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2.5 px-1">
           <div>
-            <h2 className="text-lg font-bold text-[#1c3028] flex items-center gap-2">
+            <h2 className="text-base sm:text-lg font-bold text-[#1c3028] flex items-center gap-2">
               <Baby className="w-5 h-5 text-[#264639]" />
               Crianças a Cadastrar
             </h2>
@@ -579,7 +571,7 @@ export function RegistrationForm() {
             variant="outline"
             size="sm"
             onClick={addChild}
-            className="gap-1.5 font-bold"
+            className="gap-1.5 font-bold whitespace-nowrap self-start sm:self-auto shrink-0"
           >
             <Plus className="w-4 h-4" />
             Adicionar Outro Filho
@@ -794,11 +786,11 @@ export function RegistrationForm() {
           <Button
             type="submit"
             disabled={isSubmitting}
-            className="w-full bg-[#f4eee3] hover:bg-white text-[#1c3028] font-black h-12 text-base shadow-md cursor-pointer transition-colors"
+            className="w-full bg-[#f4eee3] hover:bg-white text-[#1c3028] font-black h-12 text-sm sm:text-base px-2 sm:px-6 shadow-md cursor-pointer transition-colors whitespace-nowrap"
           >
             {isSubmitting
               ? "Cadastrando..."
-              : `Cadastrar e Ir para Pagamento Pix (${formatCurrency(totalAmount)})`}
+              : `Cadastrar e Pagar Pix (${formatCurrency(totalAmount)})`}
           </Button>
         </CardContent>
       </Card>

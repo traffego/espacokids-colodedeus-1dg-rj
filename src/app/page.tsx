@@ -1,7 +1,6 @@
-import Link from "next/link";
 import { RegistrationForm } from "@/components/RegistrationForm";
 import { ColoDeDeusHeader } from "@/components/ColoDeDeusBrand";
-import { ShieldCheck, Heart } from "lucide-react";
+import { Heart } from "lucide-react";
 
 export default function HomePage() {
   return (
@@ -9,15 +8,7 @@ export default function HomePage() {
       {/* Topo Oficial com Carimbo Postal e Marca */}
       <ColoDeDeusHeader />
 
-      <div className="flex justify-end mb-4">
-        <Link
-          href="/admin"
-          className="text-xs text-[#507765] hover:text-[#1c3028] flex items-center gap-1.5 font-bold bg-[#ede4d3]/70 hover:bg-[#e2d6c1] px-3 py-1.5 rounded-lg border border-[#ded5c2] transition-colors"
-        >
-          <ShieldCheck className="w-3.5 h-3.5 text-[#264639]" />
-          Acesso Coordenação
-        </Link>
-      </div>
+
 
       <div className="flex-1">
         <RegistrationForm />

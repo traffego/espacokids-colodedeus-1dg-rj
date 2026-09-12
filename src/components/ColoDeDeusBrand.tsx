@@ -69,14 +69,14 @@ export function ColoDeDeusHeader() {
         </div>
       </div>
 
-      <div className="flex items-center gap-3">
-        <div className="hidden sm:block text-right">
+      <div className="hidden sm:flex items-center gap-3">
+        <div className="text-right">
           <span className="text-[11px] font-bold text-[#264639] uppercase tracking-wider block">
             Colégio Marista São José
           </span>
           <span className="text-[10px] text-[#507765]">Barra da Tijuca • RJ</span>
         </div>
-        <RioPostalStamp />
+        <RioPostalStamp className="hidden sm:inline-flex" />
       </div>
     </div>
   );
