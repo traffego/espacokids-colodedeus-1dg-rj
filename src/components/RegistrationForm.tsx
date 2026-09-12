@@ -227,7 +227,7 @@ export function RegistrationForm() {
       .map((c) => `${c.name} (${c.age} anos)`)
       .join(", ");
 
-    const text = `Olá Juciara! Paz e Bem! 🙏✨\n\nAcabei de realizar o cadastro no *Espaço Kids - Um Dia de Glória (20/Set)*:\n*Responsável:* ${completedRegistration.parentName}\n*Filho(s):* ${childrenNames}\n*Valor:* ${formatCurrency(completedRegistration.totalAmount)}\n\nSegue em anexo o comprovante do Pix para a Missão RJ (${PIX_KEY}). Obrigado! 💙`;
+    const text = `Olá Juciara! 🙏✨\n\nAcabei de realizar o cadastro no *Espaço Kids - Um Dia de Glória (20/Set)*:\n*Responsável:* ${completedRegistration.parentName}\n*Filho(s):* ${childrenNames}\n*Valor:* ${formatCurrency(completedRegistration.totalAmount)}\n\nSegue em anexo o comprovante do Pix para a Missão RJ (${PIX_KEY}). Obrigado! 💙`;
     return encodeURIComponent(text);
   };
 
