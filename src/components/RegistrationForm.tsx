@@ -556,26 +556,14 @@ export function RegistrationForm() {
 
       {/* DADOS DOS FILHOS */}
       <div className="space-y-4">
-        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2.5 px-1">
-          <div>
-            <h2 className="text-base sm:text-lg font-bold text-[#1c3028] flex items-center gap-2">
-              <Baby className="w-5 h-5 text-[#264639]" />
-              Crianças a Cadastrar
-            </h2>
-            <p className="text-xs text-[#507765]">
-              Adicione cada filho que ficará no Espaço Kids.
-            </p>
-          </div>
-          <Button
-            type="button"
-            variant="outline"
-            size="sm"
-            onClick={addChild}
-            className="gap-1.5 font-bold whitespace-nowrap self-start sm:self-auto shrink-0"
-          >
-            <Plus className="w-4 h-4" />
-            Adicionar Outro Filho
-          </Button>
+        <div className="px-1">
+          <h2 className="text-base sm:text-lg font-bold text-[#1c3028] flex items-center gap-2">
+            <Baby className="w-5 h-5 text-[#264639]" />
+            Crianças a Cadastrar
+          </h2>
+          <p className="text-xs text-[#507765]">
+            Preencha os dados de cada criança abaixo.
+          </p>
         </div>
 
         {childrenList.map((child, index) => (
@@ -754,6 +742,19 @@ export function RegistrationForm() {
             </CardContent>
           </Card>
         ))}
+
+        {/* Botão de adicionar criança posicionado abaixo do formulário */}
+        <div className="pt-1">
+          <Button
+            type="button"
+            variant="outline"
+            onClick={addChild}
+            className="w-full py-3 h-12 border-dashed border-2 border-[#264639]/40 bg-[#fcf9f2] hover:bg-[#ede4d3] text-[#1c3028] font-bold gap-2 text-sm shadow-2xs cursor-pointer transition-colors"
+          >
+            <Plus className="w-4 h-4 text-[#264639]" />
+            Adicionar Outro Filho
+          </Button>
+        </div>
       </div>
 
       {/* CARD DE INVESTIMENTO & SUBMIT */}
